@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Java Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Getting_started_with_java">Getting started with java</a></li>
+            <li><a class="nav-link" href="#Java_Entry_point">Java Entry point</a></li>
+            <li><a class="nav-link" href="#Printing_to_the_console">Printing to the console</a></li>
+            <li><a class="nav-link" href="#Declaring_Functions">Declaring Functions</a></li>
+            <li><a class="nav-link" href="#Object_Oriented_programming">Object Oriented Programming </a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Getting_started_with_java" >
+            <header>Getting started with java</header>
+            <p>Steps in getting started</p>
+            <ol>
+                <li>Download Java</li>
+                <li>Download Java SDK</li>
+                <li>Get an Integrated Development Environment(IED)</li>
+                <li>Start a project within the IED</li>
+                <li>code up "Hello World" and run the code</li>
+            </ol>
+        </section>
+        <section class="main-section" id="Java_Entry_point">
+            <header>Java Entry point</header>
+            <p>The entry application to a java application is the main function.</p>
+            <p>It is categorised by its (string{} arg) as a parameter to the function</p>
+            <pre>
+                <code>
+                    public class MyMainFunction{
+                        /* Java main function example */
+                        public static void main(string[] args) {
+
+                        }
+                    }
+                </code>
+            </pre>
+            <p>As you can see the main function is wrapped within a class which is part of the object oriented structure of Java Projects.</p>
+            <p>The name of the project is therefore MyMainFunction</p>
+        </section>
+        <section class="main-section" id="Printing_to_the_console">
+            <header>Printing to the console</header>
+            <p>In order to print to the console we use System.out.printin.</p>
+            <p>I know it is a very long cumbersome but this is how it's done.</p>
+            <pre>
+                <code>
+                    public class MyMainFunction{
+                        /*java main function example */
+                        public static void main(string[]args) {
+                            System.out.printin("Hello World"); 
+
+                        }
+                    }
+                </code>
+            </pre>
+            <p>In this example we are printing"Hello World" to the console when we run the program.</p>
+        </section>
+        <section class="main-section" id="Declaring_Functions">
+            <header>Declaring Functions</header>
+            <p>Functions are actually called Methods in Java.Here is an example of howw to declare a Java method.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwKX3Psfd7H-2iXEQeaP3Z1NYE5Ak5Sf7j05nVL0jJXg&s" alt="Java-method-img" class="image"/>
+            <p>some copiable code:</p>
+            <pre>
+                <code>
+                    public static void myFunction(string name, int, age) {
+                        //function code 
+                    }
+                </code>
+            </pre>
+        </section>
+        <section class="main-section" id="Object_Oriented_programming">
+            <header>Object Oriented Programming</header>
+            <p>Java is known as an object oriented programming language.</p>
+            <p>This means that it is easy to represent entities as objects by using classes and encapsulation.</p>
+            <p>An example of this might be a student class to represent a student</p>
+            <pre>
+                <code>
+                    public class Student{
+                        /*Student properties*/ 
+                        private string name;
+                        private int age;
+
+                       /*constructor*/ 
+                       public Student (string name, int, age){
+                        this.name= name;
+                        this.age= age;
+                       }
+
+                       /*Getter method*/
+                       public String getName{} {
+                       return name;
+                       }
+
+                       /*setter method*/ 
+                       public void setName(string name) {
+                       this.name= name;
+                       }
+
+                    }
+                </code>
+            </pre>
+            <p>We use this class by doing the following:</p>
+            <pre>
+                <code>
+                    Student student1= new student(Jimmy, 19);
+                    String jimmyName= student 1.getName();
+                    student1.setName("kevin");
+                    string kevinName= student1.getName();
+                </code>
+            </pre>
+        </section>
+        <footer>
+            <p>Document brought to you on the fly by Faith Kemunto.</p>
+        </footer>
+    </main>
+
+
+    
+    
+</body>
+</html>
